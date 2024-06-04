@@ -8,6 +8,7 @@ frappe.ui.form.on('main', {
             frm.doc.t1 = [];
         }
     },
+
 });
 
 frappe.ui.form.on('table1', {
@@ -48,9 +49,6 @@ frappe.ui.form.on('table2', {
     age: function(frm, cdt, cdn) {
         sync_tables(frm, cdt, cdn, 't2', 't1');
     },
-    // t2_remove: function(frm, cdt, cdn) {
-    //     remove_sync_tables(frm, cdt, cdn, 't2', 't1');
-    // }
     before_t2_remove: function(frm, cdt, cdn) {
         var target_row_index = locals[cdt][cdn].idx;
         // console.log("Before deletion:", frm.doc.t2);

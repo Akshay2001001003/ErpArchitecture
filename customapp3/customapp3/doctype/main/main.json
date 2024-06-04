@@ -9,7 +9,8 @@
   "t1",
   "t2",
   "length",
-  "aadhar_no"
+  "aadhar_no",
+  "err"
  ],
  "fields": [
   {
@@ -38,11 +39,16 @@
    "fieldname": "aadhar_no",
    "fieldtype": "Data",
    "label": "Aadhar No."
+  },
+  {
+   "fieldname": "err",
+   "fieldtype": "Data",
+   "label": "err"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-03 15:29:11.395764",
+ "modified": "2024-06-04 17:57:09.327310",
  "modified_by": "Administrator",
  "module": "Customapp3",
  "name": "main",
